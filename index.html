@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prashant Kr Prasad | Backend Developer & ML Enthusiast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="logo-dot">
+          <div class="logo-inner">P</div>
+        </div>
+        <div>
+          <div class="nav-title">Prashant Kr Prasad</div>
+          <div class="nav-sub">Backend Developer · ML Enthusiast</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#travel">Travel</a>
+        <a href="#books">Books</a>
+        <a href="#contact" class="primary-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page">
+    <main>
+      <!-- Hero -->
+      <section id="home">
+        <div class="hero">
+          <div class="hero-left">
+            <div class="hero-kicker">Backend · ML · Curiosity</div>
+            <h1 class="hero-title">
+              Hi, I’m <span>Prashant</span>.<br />
+              I build backend systems and explore machine learning.
+            </h1>
+            <p class="hero-subtitle">
+              Backend-focused software developer with hands-on experience in Django and FastAPI, a published
+              research paper in machine learning, and a love for travelling, biking, photography, and reading.
+            </p>
+
+            <div class="hero-badges">
+              <div class="badge">
+                <span class="badge-dot"></span>
+                Open to backend & ML roles
+              </div>
+              <div class="badge">
+                Research · Problem Solving · System Design
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">
+                View Projects →
+              </button>
+              <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="card">
+              <div class="card-title">What I enjoy working on</div>
+              <div class="card-text">
+                Designing clean APIs, working with databases, optimizing performance, 
+                and using ML to turn data into something useful.
+              </div>
+              <div class="pill-row">
+                <span class="pill">Backend Architecture</span>
+                <span class="pill">APIs & Microservices</span>
+                <span class="pill">Databases</span>
+                <span class="pill">ML Experiments</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Beyond the code</div>
+              <div class="card-text">
+                I recharge on the road —
+                travelling, riding my bike, capturing moments through photography, 
+                or getting lost in a good book.
+              </div>
+              <div class="pill-row">
+                <span class="pill">Travelling</span>
+                <span class="pill">Biking</span>
+                <span class="pill">Photography</span>
+                <span class="pill">Reading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="section-label">About</div>
+        <div class="section-header">
+          <h2 class="section-title">Who I am</h2>
+          <p class="section-subtitle">
+            Backend developer with a research mindset and a bias towards shipping.
+          </p>
+        </div>
+        <p class="about-main">
+          I’m a backend-focused software developer who enjoys building reliable, maintainable systems. I’ve worked with
+          APIs, databases, and services, and I’m actively exploring machine learning — both through self-driven projects
+          and research, which led to a published paper on surface roughness prediction using ML.
+        </p>
+        <p class="about-sub">
+          Outside of work and learning, I love travelling to new places, going on bike rides, taking photos, and reading
+          books across tech, philosophy, and non-fiction. I like combining discipline in my craft with curiosity about
+          how the world works.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="section-label">Skills</div>
+        <div class="section-header">
+          <h2 class="section-title">What I work with</h2>
+          <p class="section-subtitle">A snapshot of the tools and technologies I’m comfortable with.</p>
+        </div>
+
+        <div class="grid-3">
+          <div>
+            <h3 class="subheading">Backend</h3>
+            <div class="tag-cloud">
+              <span>Python</span>
+              <span>Django</span>
+              <span>FastAPI</span>
+              <span>REST APIs</span>
+              <span>Authentication</span>
+              <span>Microservices</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="subheading">Data & ML</h3>
+            <div class="tag-cloud">
+              <span>Machine Learning</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>TensorFlow</span>
+              <span>Scikit-learn</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="subheading">Infrastructure & Tools</h3>
+            <div class="tag-cloud">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>Git & GitHub</span>
+              <span>NGINX</span>
+              <span>Deployment</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <div class="section-label">Experience</div>
+        <div class="section-header">
+          <h2 class="section-title">Where I’ve worked</h2>
+          <p class="section-subtitle">Some highlights from my journey so far.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Backend Developer</div>
+            <div class="timeline-meta">Safhire.ai · Oct 2023 – Present</div>
+            <ul class="list">
+              <li>Developing and maintaining RESTful APIs with FastAPI and secure user authentication.</li>
+              <li>Integrating LLM models to automate candidate profile creation and ranking.</li>
+              <li>Optimizing server performance and reducing latency, improving product responsiveness.</li>
+              <li>Collaborating with frontend and product teams to deliver scalable features.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-role">Python Developer</div>
+            <div class="timeline-meta">WIFT Cap Solutions · Nov 2022 – Oct 2023</div>
+            <ul class="list">
+              <li>Implemented backend solutions with Django, improving system stability and scalability.</li>
+              <li>Reduced bugs through rigorous debugging, testing, and refactoring.</li>
+              <li>Managed deployments and NGINX server configurations for smooth rollouts.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="section-label">Projects</div>
+        <div class="section-header">
+          <h2 class="section-title">Things I’ve built</h2>
+          <p class="section-subtitle">A mix of backend and ML projects.</p>
+        </div>
+
+        <h3 class="subheading with-margin">Backend</h3>
+        <div class="grid-2 backend-grid">
+          <div class="project">
+            <div class="project-title">Real Estate Web Application</div>
+            <div class="project-meta">Backend · Django · Deployment</div>
+            <p>
+              A real estate web application built using Python and Django with Jinja templates. Deployed on a cloud
+              droplet with SSH configuration, database setup, Gunicorn, and NGINX for a production-ready environment.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>PostgreSQL</span>
+              <span>NGINX</span>
+              <span>Gunicorn</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-title">AI Blog Generator Web Application</div>
+            <div class="project-meta">Django · Tailwind CSS · OpenAI API</div>
+            <p>
+              Web application that generates AI-powered blog content using the OpenAI API. Includes user-friendly UI,
+              prompt configuration, and content management.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>Tailwind CSS</span>
+              <span>OpenAI API</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subheading with-margin">Machine Learning & Data</h3>
+        <div class="grid-2">
+          <div class="project">
+            <div class="project-title">Surface Roughness Prediction</div>
+            <div class="project-meta">M.Tech Thesis · ML</div>
+            <p>
+              Built machine learning models to predict surface roughness of AISI 304 steel in nanofluid-assisted turning,
+              optimizing machining parameters based on R², RMSE, and MSE metrics.
+            </p>
+            <div class="project-tags">
+              <span>Machine Learning</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-title">ML Experiments & Prototypes</div>
+            <div class="project-meta">Exploration · Learning</div>
+            <p>
+              A collection of smaller ML experiments including classification, regression, and data analysis tasks,
+              used to explore new techniques and improve intuition around models.
+            </p>
+            <div class="project-tags">
+              <span>Data Analysis</span>
+              <span>Visualization</span>
+              <span>ML Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research">
+        <div class="section-label">Research</div>
+        <div class="section-header">
+          <h2 class="section-title">Published work</h2>
+          <p class="section-subtitle">A quick overview of my research paper.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-title">
+            Surface Roughness Prediction of AISI 304 Steel in Nanofluid Assisted Turning Using Machine Learning Technique
+          </div>
+          <div class="project-meta">Key Engineering Materials, Vol. 933, pp. 13–24, 2022 · DOI: 10.4028/p-wwb643</div>
+          <p class="research-summary">
+            This work applies machine learning models to predict surface roughness during nanofluid-assisted turning of
+            AISI 304 steel. By learning from experimental data, the models help optimize cutting parameters and improve
+            machining quality.
+          </p>
+          <ul class="list">
+            <li>Developed and evaluated multiple ML models for surface roughness prediction.</li>
+            <li>Used R², RMSE, and MSE metrics to quantify predictive performance.</li>
+            <li>Demonstrated how ML can support smarter, data-driven manufacturing.</li>
+          </ul>
+          <p class="research-link">
+            <a href="https://doi.org/10.4028/p-wwb643" target="_blank">View paper / DOI ↗</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Travel & Photography -->
+      <section id="travel">
+        <div class="section-label">Travel & Biking</div>
+        <div class="section-header">
+          <h2 class="section-title">On the road</h2>
+          <p class="section-subtitle">Some routes, places, and moments I’ve enjoyed.</p>
+        </div>
+
+        <div class="travel-grid">
+          <div class="travel-card">
+            <div class="travel-tag">Ride</div>
+            <div class="travel-title">Road to Heaven, Gujarat</div>
+            <div class="travel-text">
+              A peaceful ride through smooth curves, quiet hills, and scenic viewpoints. Not the longest route, not the toughest — but one of the most calming I’ve experienced.
+            </div>
+          </div>
+          <div class="travel-card">
+            <div class="travel-tag">Travel</div>
+            <div class="travel-title">Ladakh 2024</div>
+            <div class="travel-text">
+              1500+ km of mountains, silent valleys, cold winds and roads that challenge you mentally
+      and physically. Ladakh wasn’t just a trip — it felt like a reset button for life.
+            </div>
+          </div>
+          <div class="travel-card">
+            <div class="travel-tag">Photography</div>
+            <div class="travel-title">Portraits</div>
+            <div class="travel-text">
+              Natural emotions, candid smiles, and genuine expressions that make every moment feel alive.
+            </div>
+          </div>
+        </div>
+
+        <p class="travel-note">
+          More rides & stories coming soon 🚀
+        </p>
+      </section>
+
+      <!-- Books -->
+      <section id="books">
+        <div class="section-label">Books</div>
+        <div class="section-header">
+          <h2 class="section-title">What I’ve been reading</h2>
+          <p class="section-subtitle">A few books that left an impact.</p>
+        </div>
+
+        <div class="books-grid">
+          <div class="book-card">
+            <div class="book-title">Psycho-Cybernetics</div>
+            <div class="book-meta">Maxwell Maltz · Self-improvement</div>
+            <div class="book-text">
+              Helped me reframe self-image and understand how mindset influences performance and confidence.
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-title">The Subtle Art of Not Giving a F*ck</div>
+            <div class="book-meta">Mark Manson · Non-fiction</div>
+            <div class="book-text">
+              Honest, direct perspective on choosing what truly deserves attention and energy in life.
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-title">Meditations</div>
+            <div class="book-meta">Marcus Aurelius · Philosophy</div>
+            <div class="book-text">
+              Stoic reflections that influence how I think about discipline, responsibility, and staying calm.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="section-label">Contact</div>
+        <div class="section-header">
+          <h2 class="section-title">Let’s talk</h2>
+          <p class="section-subtitle">Whether it’s backend work, ML ideas, or just bikes & books.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <div class="contact-title">
+              Open to opportunities & collaboration
+            </div>
+            <p class="contact-text">
+              If you’d like to talk about backend roles, ML projects, collaboration, or just want to say hi, feel free to reach out.
+            </p>
+            <ul class="list">
+              <li>Email: <a href="mailto:mr.prashantkrprasad@gmail.com">mr.prashantkrprasad@gmail.com</a></li>
+              <li>GitHub: <a href="https://github.com/praa532" target="_blank">@praa532</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/prashantkrprasad/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Static demo only. Connect a backend or use a service like Formspree to handle submissions.');">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="your@email.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Write a short message..."></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div>© <span id="year"></span> Prashant Kr Prasad</div>
+    <div>Built with clean HTML & CSS.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
