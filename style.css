@@ -746,4 +746,26 @@ footer {
   margin-bottom: 6px;
 }
 
+.glow-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #1f1f1f, #000);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+.glow-btn:hover {
+  border-color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 14px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.4);
+}
+
 }
