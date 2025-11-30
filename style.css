@@ -775,5 +775,61 @@ footer {
   box-shadow: 0 0 14px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.4);
 }
 
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0;
+  font-size: 18px;
+}
+
+.contact-list li i {
+  font-size: 20px;
+  color: #00eaff;
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+.contact-list a {
+  color: #cfd8ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s;
+  position: relative;
+}
+
+.contact-list a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 6px #00eaff;
+}
+
+/* neon hover effect on icons */
+.contact-list li:hover i {
+  opacity: 1;
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 6px #00eaff);
+}
+
+.contact-list a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00eaff;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #00eaff;
+}
+
+.contact-list a:hover::after {
+  width: 100%;
+}
 
 }
