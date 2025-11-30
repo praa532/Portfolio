@@ -35,6 +35,13 @@ img {
   display: block;
 }
 
+.logo-dot img {
+  width: 100% !important;   /* lock it to the parent */
+  height: 100% !important;
+  object-fit: cover;
+  display: block;           /* keeps it consistent with global rule */
+}
+
 /* Layout */
 .page {
   max-width: 1120px;
@@ -69,7 +76,7 @@ header {
 .logo-dot {
   width: 32px;
   height: 32px;
-  border-radius: 999px;
+  border-radius: 50%;
   background: conic-gradient(from 180deg, #6366f1, #22c55e, #06b6d4, #6366f1);
   padding: 2px;
 }
@@ -767,5 +774,6 @@ footer {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 0 14px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.4);
 }
+
 
 }
