@@ -44,14 +44,13 @@ It’s designed to be fast, simple, and distraction-free — with focus on clari
 
 ## 📂 Folder Structure
 
+```plaintext
 📁 Portfolio
-├── 📁 assets
-│ ├── images/
-│ └── icons/
-├── 📁 css
-│ └── style.css
-├── 📁 js
-│ └── script.js
+├── assets/
+│   ├── images/
+│   └── icons/
+├── css/
+│   └── style.css
 ├── index.html
 └── README.md
 
