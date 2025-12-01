@@ -10,6 +10,18 @@
   --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
 }
 
+#home {
+  margin-top: 0;
+  padding-top: 5px; /* adjust between 20px–60px depending on what feels right */
+}
+
+/* On mobile, even tighter spacing */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 10px;
+  }
+}
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -877,6 +889,103 @@ footer {
     overflow: visible !important;
     text-overflow: unset !important;
   }
+}
+
+/* Desktop / default layout */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-left {
+  flex: 1;
+  order: 1;   /* intro first */
+}
+
+.hero-right {
+  flex: 1;
+  order: 2;   /* cards second */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;        /* stack vertically */
+  }
+
+  .hero-left {
+    order: 1;                      /* show intro on top */
+  }
+
+  .hero-right {
+    order: 2;                      /* cards below intro */
+    width: 100%;
+  }
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateX(4px);
+  color: var(--accent);
+}
+
+/* Keep only layout tweaks in media queries */
+@media (max-width: 768px) {
+  .contact-link {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---- Contact list animation ---- */
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+
+  /* animation */
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.contact-list li i {
+  font-size: 1.1rem;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.contact-list li a {
+  text-decoration: none;
+  color: var(--text-muted, #d0d7ff);
+  transition: color 0.25s ease;
+}
+
+/* hover / focus animation (DESKTOP + MOBILE) */
+.contact-list li:hover,
+.contact-list li:focus-within {
+  transform: translateX(6px);
+  color: var(--accent, #34d6ff);
+}
+
+.contact-list li:hover i,
+.contact-list li:hover a,
+.contact-list li:focus-within i,
+.contact-list li:focus-within a {
+  color: var(--accent, #34d6ff);
 }
 
 
