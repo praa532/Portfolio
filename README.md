@@ -48,7 +48,7 @@ It’s designed to be fast, simple, and distraction-free — with focus on clari
 📁 Portfolio
 ├── 📁 assets
 │ ├── images/
-│ └── logos/
+│ └── logo/
 ├── 📁 css
 │ └── style.css
 ├── index.html
