@@ -53,6 +53,7 @@ It’s designed to be fast, simple, and distraction-free — with focus on clari
 │   └── style.css
 ├── index.html
 └── README.md
+```
 
 
 ---
