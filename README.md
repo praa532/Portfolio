@@ -46,11 +46,11 @@ It’s designed to be fast, simple, and distraction-free — with focus on clari
 
 ```plaintext
 📁 Portfolio
-├── assets/
-│   ├── images/
-│   └── icons/
-├── css/
-│   └── style.css
+├── 📁 assets
+│ ├── images/
+│ └── icons/
+├── 📁 css
+│ └── style.css
 ├── index.html
 └── README.md
 ```
