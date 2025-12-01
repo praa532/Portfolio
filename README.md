@@ -2,7 +2,7 @@
 
 A clean, responsive personal portfolio website built using **HTML, CSS, and JavaScript**, showcasing my work in **backend development, machine learning**, and my interests beyond code — including travel, photography, and motorcycles.
 
-Live Site → **https://yourdomain.com**
+Live Site → **(https://www.codekaptaan.com/)**
 
 ---
 
