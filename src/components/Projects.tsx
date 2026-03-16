@@ -13,7 +13,7 @@ const projects = [
     tech: ["FastAPI", "PostgreSQL", "Redis", "Kafka"],
     github: "#",
     live: "#",
-    image: "https://images.unsplash.com/photo-1611974717482-9961783023e3?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "AI Developer Assistant",
@@ -21,7 +21,7 @@ const projects = [
     tech: ["Python", "OpenAI", "Vector DB", "Docker"],
     github: "#",
     live: "#",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1932&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "FX Rate Engine",
@@ -29,7 +29,7 @@ const projects = [
     tech: ["Go", "gRPC", "InfluxDB", "AWS"],
     github: "#",
     live: "#",
-    image: "https://images.unsplash.com/photo-1518186239751-6467fff5831a?q=80&w=1932&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1611974717482-9961783023e3?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Real-time Payment Gateway",
@@ -37,7 +37,7 @@ const projects = [
     tech: ["FastAPI", "Stripe API", "Firebase", "GCP"],
     github: "#",
     live: "#",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
