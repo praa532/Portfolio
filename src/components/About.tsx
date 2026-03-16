@@ -104,10 +104,10 @@ export function About() {
                 </h2>
                 <h3 className="text-4xl font-bold tracking-tight">
                   Crafting the future of <br />
-                  <span className="text-secondary neon-glow-purple">financial infrastructure.</span>
+                  <span className="text-secondary neon-glow-purple">Backend infrastructure.</span>
                 </h3>
                 <p className="text-muted-foreground text-lg">
-                  Over the years, I've specialized in building high-concurrency systems using 
+                  Over the years, I&apos;ve specialized in building high-concurrency systems using 
                   FastAPI, Python, and cloud-native technologies. My mission is to build systems 
                   that are not just functional, but architecturally sound and future-proof.
                 </p>
@@ -116,7 +116,7 @@ export function About() {
               <div className="grid grid-cols-3 gap-8 p-8 glass-card rounded-2xl">
                 <Counter value={50} label="Projects Built" suffix="+" />
                 <Counter value={100} label="APIs Developed" suffix="M+" />
-                <Counter value={8} label="Years Exp" />
+                <Counter value={4} label="Years Exp" />
               </div>
 
               <div className="flex items-center gap-4">
@@ -129,7 +129,7 @@ export function About() {
                 </div>
                 <div className="text-sm">
                   <span className="font-bold text-white">Trusted by leading fintechs</span>
-                  <p className="text-muted-foreground">Architecting global payment engines.</p>
+                  <p className="text-muted-foreground">Architecting global backend engines.</p>
                 </div>
               </div>
             </div>

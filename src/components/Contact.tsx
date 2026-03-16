@@ -44,12 +44,17 @@ export function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "hello@codekaptaan.dev" },
-                { icon: Github, label: "GitHub", value: "github.com/codekaptaan" },
-                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/codekaptaan" },
+                { icon: Mail, label: "Email", value: "prashant@codekaptaan.com", href: "mailto:prashant@codekaptaan.com" },
+                { icon: Github, label: "GitHub", value: "github.com/praa532", href: "https://github.com/praa532" },
+                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/prashantkrprasad", href: "https://linkedin.com/in/prashantkrprasad" },
               ].map((item, i) => (
                 <ScrollReveal key={item.label} delay={i * 0.1}>
-                  <div className="flex items-center gap-4 group cursor-pointer">
+                  <a 
+                    href={item.href} 
+                    target={item.label !== "Email" ? "_blank" : undefined}
+                    rel={item.label !== "Email" ? "noopener noreferrer" : undefined}
+                    className="flex items-center gap-4 group cursor-pointer"
+                  >
                     <div className="w-12 h-12 rounded-xl glass border border-white/10 flex items-center justify-center group-hover:border-primary transition-all">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
@@ -57,7 +62,7 @@ export function Contact() {
                       <p className="text-xs uppercase tracking-widest text-muted-foreground">{item.label}</p>
                       <p className="text-sm font-bold text-white group-hover:text-primary transition-colors">{item.value}</p>
                     </div>
-                  </div>
+                  </a>
                 </ScrollReveal>
               ))}
             </div>
@@ -81,7 +86,7 @@ export function Contact() {
                       <Send className="w-8 h-8 text-primary" />
                     </div>
                     <h4 className="text-2xl font-bold mb-2">Transmission Successful</h4>
-                    <p className="text-muted-foreground">I'll get back to you within 24 business hours.</p>
+                    <p className="text-muted-foreground">I&apos;ll get back to you within 24 business hours.</p>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-8">

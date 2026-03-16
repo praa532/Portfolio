@@ -1,16 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollReveal } from "./animations/ScrollReveal";
 import { User, Server, Database, Globe, CreditCard, Shield } from "lucide-react";
 
 export function Architecture() {
-  const line1Ref = useRef(null);
-  const line2Ref = useRef(null);
-  const line3Ref = useRef(null);
-  const line4Ref = useRef(null);
-
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
@@ -23,7 +18,13 @@ export function Architecture() {
     return () => ctx.revert();
   }, []);
 
-  const Node = ({ icon: Icon, label, color = "primary" }: any) => (
+  interface NodeProps {
+    icon: React.ElementType;
+    label: string;
+    color?: string;
+  }
+
+  const Node = ({ icon: Icon, label, color = "primary" }: NodeProps) => (
     <div className="flex flex-col items-center gap-4 z-10">
       <div className={`w-16 h-16 rounded-2xl glass border border-${color}/50 flex items-center justify-center group-hover:bg-${color}/10 transition-all duration-300 relative`}>
         <Icon className={`w-8 h-8 text-${color}`} />

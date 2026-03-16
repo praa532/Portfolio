@@ -4,6 +4,7 @@ import { ScrollReveal } from "./animations/ScrollReveal";
 import { TiltCard } from "./animations/TiltCard";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 const projects = [
   {
@@ -64,10 +65,11 @@ export function Projects() {
                   {/* Image Overlay */}
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-500 z-10" />
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-20" />
                   </div>

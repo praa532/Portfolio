@@ -9,18 +9,21 @@ import { MagneticButton } from "./animations/MagneticButton";
 import { ArrowRight, Download, Terminal } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
-function Stars(props: any) {
-  const ref = useRef<any>();
+function Stars() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref = useRef<any>(null!);
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    if (ref.current) {
+      ref.current.rotation.x -= delta / 10;
+      ref.current.rotation.y -= delta / 15;
+    }
   });
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere as any} stride={3} frustumCulled {...props}>
+      <Points ref={ref} positions={sphere as Float32Array} stride={3} frustumCulled>
         <PointMaterial
           transparent
           color="#00E5FF"
@@ -79,7 +82,7 @@ export function Hero() {
           </h2>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter mb-6 leading-none">
             ENGINEERING <span className="text-primary neon-glow-blue">SCALABLE</span> <br />
-            FINTECH SYSTEMS.
+            BACKEND SYSTEMS.
           </h1>
 
           <div className="text-xl md:text-2xl text-muted-foreground mb-12 h-8">
