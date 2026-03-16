@@ -6,13 +6,11 @@ import { motion } from "framer-motion";
 interface MagneticButtonProps {
   children: ReactNode;
   className?: string;
-  distance?: number;
 }
 
 export function MagneticButton({
   children,
   className = "",
-  distance = 40,
 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });

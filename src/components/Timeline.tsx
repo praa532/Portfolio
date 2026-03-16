@@ -75,7 +75,7 @@ export function Timeline() {
         <div className="text-center mb-24">
           <ScrollReveal>
             <h2 className="text-primary font-mono uppercase tracking-widest text-sm mb-4">
-              // Career Path
+              {"// Career Path"}
             </h2>
             <h3 className="text-4xl md:text-5xl font-black tracking-tight">
               Journey through <br />
