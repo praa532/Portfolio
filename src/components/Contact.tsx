@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./animations/ScrollReveal";
-import { Send, Mail, Github, Linkedin, Twitter, MessageSquare } from "lucide-react";
+import { Send, Mail, Github, Linkedin, MessageSquare } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -30,7 +30,7 @@ export function Contact() {
           <div className="w-full md:w-1/3 space-y-12">
             <ScrollReveal>
               <h2 className="text-primary font-mono uppercase tracking-widest text-sm mb-4">
-                // Connect
+                {"// Connect"}
               </h2>
               <h3 className="text-4xl font-black tracking-tight mb-8">
                 Initiate <br />

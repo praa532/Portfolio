@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ScrollReveal } from "./animations/ScrollReveal";
 import { TiltCard } from "./animations/TiltCard";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
@@ -48,7 +47,7 @@ export function Projects() {
         <div className="mb-16">
           <ScrollReveal>
             <h2 className="text-primary font-mono uppercase tracking-widest text-sm mb-4">
-              // Selected Work
+              {"// Selected Work"}
             </h2>
             <h3 className="text-4xl md:text-5xl font-black tracking-tight">
               Architecting solutions for <br />

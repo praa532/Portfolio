@@ -3,7 +3,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
-import { useState, useRef, useMemo } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { MagneticButton } from "./animations/MagneticButton";
 import { ArrowRight, Download, Terminal } from "lucide-react";

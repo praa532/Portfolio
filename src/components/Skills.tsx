@@ -1,11 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ScrollReveal } from "./animations/ScrollReveal";
 import { TiltCard } from "./animations/TiltCard";
 import { 
   Database, 
-  Layers, 
   Cloud, 
   Cpu, 
   Globe, 
@@ -80,7 +78,7 @@ export function Skills() {
         <div className="mb-16">
           <ScrollReveal>
             <h2 className="text-primary font-mono uppercase tracking-widest text-sm mb-4">
-              // Technical Arsenal
+              {"// Technical Arsenal"}
             </h2>
             <h3 className="text-4xl md:text-5xl font-black tracking-tight">
               Powered by a modern <br />

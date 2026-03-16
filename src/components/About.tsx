@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { ScrollReveal } from "./animations/ScrollReveal";
-import { User, Code2, Rocket, Zap } from "lucide-react";
+import { User, Code2, Rocket } from "lucide-react";
 
 interface CounterProps {
   value: number;
@@ -100,7 +100,7 @@ export function About() {
             <div className="w-full md:w-1/2 space-y-12">
               <div className="space-y-4">
                 <h2 className="text-primary font-mono uppercase tracking-widest text-sm">
-                  // Professional Summary
+                  {"// Professional Summary"}
                 </h2>
                 <h3 className="text-4xl font-bold tracking-tight">
                   Crafting the future of <br />
