@@ -1,6 +1,22 @@
+# Portfolio - codekaptaan.com
+
+Live Site → **(https://www.codekaptaan.com/)**
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🚀 Tech Stack
+
+| Layer | Tools |
+|-------|-------|
+| Framework | [Next.js 14](https://nextjs.org/) (App Router) |
+| Styling | [Tailwind CSS](https://tailwindcss.com/), [Shadcn UI](https://ui.shadcn.com/) |
+| Animations | [Framer Motion](https://www.framer.com/motion/), [GSAP](https://gsap.com/) |
+| 3D Elements | [Three.js](https://threejs.org/) (via React Three Fiber) |
+| Deployment | [Vercel](https://vercel.com/) |
+
+---
+
+## 🛠️ Getting Started
 
 First, run the development server:
 
@@ -18,19 +34,29 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📬 Contact
 
-To learn more about Next.js, take a look at the following resources:
+If you'd like to discuss backend roles, ML experiments, collaboration ideas, or just motorcycles & books — reach out 👇
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Email:** mr.prashantkrprasad@gmail.com  
+- **LinkedIn:** https://www.linkedin.com/in/prashantkrprasad  
+- **GitHub:** https://github.com/praa532  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is open-source and available under the **MIT License**.  
+You may use parts of the structure or styling, but **please avoid cloning it as-is as a personal portfolio.**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ⭐ If this repo helped you
+
+Give this repository a star — it helps more than you think ⭐
+
+---
+
+### _“Building things that are useful, thoughtful, and a little bit personal.”_
