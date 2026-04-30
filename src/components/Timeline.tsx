@@ -10,15 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
   {
-    year: "2025 - Present",
-    title: "Backend Architect",
-    company: "Aviato Consulting",
-    description: "Leading the architectural overhaul of a core multi-currency ledger system, processing $100M+ in monthly transactions.",
-    icon: <Briefcase className="w-5 h-5" />,
-    type: "work",
-  },
-  {
-    year: "2023 - 2025",
+    year: "2023 - Present",
     title: "Software Engineer",
     company: "Safhire.ai",
     description: "Designed and implemented high-performance FastAPI microservices and optimized PostgreSQL query performance for high-traffic endpoints.",
