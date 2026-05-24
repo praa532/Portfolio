@@ -9,8 +9,16 @@ import { Calendar, Briefcase, GraduationCap, Award } from "lucide-react";
 gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
+    {
+    year: "2025 - Present",
+    title: "Backend Engineer",
+    company: "Aviato Consulting",
+    description: "Building scalable APIs for fintech applications and developing Nabu Cares, a healthcare platform. Focused on designing high-performance FastAPI microservices and optimizing Firestore performance.",
+    icon: <Briefcase className="w-5 h-5" />,
+    type: "work",
+  },
   {
-    year: "2023 - Present",
+    year: "2023 - 2025",
     title: "Software Engineer",
     company: "Safhire.ai",
     description: "Designed and implemented high-performance FastAPI microservices and optimized PostgreSQL query performance for high-traffic endpoints.",
